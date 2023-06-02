@@ -1,0 +1,32 @@
+nav{
+    background-color: #313131;
+    color: #fff;
+    display: flex;
+    padding: 1rem 9rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.search{
+    display: flex;
+    align-items: center;
+
+}
+.search input{
+    padding: .3rem;
+    width: 14rem;
+}
+.search i{
+    background-color: orange;
+    color: #000;
+    padding: .4rem;
+}
+
+
+@media (max-width:680px) {
+    nav{
+        justify-content: center;
+    }
+    .search{
+        display: none;
+    }
+}

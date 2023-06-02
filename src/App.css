@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-container{
+    display: flex;
+    gap: 10rem;
+    flex-wrap: wrap;
+    padding: 1rem 10rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Single movie show */
+
+.movie-container{
+    display: flex;
+    padding: 4rem 6rem;
+    gap: 4rem;
+    position:relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.movie-first{
+    display: flex;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.movie-img{
+    height: 30rem;
+    width:25rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-img img{
+    width: 100%;
+    height: 100%;
+}
+.book-now{
+    width: 25rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-now button{
+    padding: 1rem;
+    border:0;
+    outline:0;
+    background-color: skyblue;
+    border-radius: 1rem;
+    width:20rem;
+    cursor: pointer
+}
+
+
+.movie-info{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.movie-title h1{
+    font-size: 4rem;
+}
+
+.movie-rating h3{
+    font-size: 2rem;
+}
+
+
+.genre span{
+    background-color: skyblue;
+    padding:.7rem;
+    margin:0 1rem 0 0;
+    border-radius: 1rem;
+}
+
+.summary{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+
+/* form */
+
+.form{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-70%);
+    z-index: 999;
+    width: 30rem;
+    height: 30rem;
+    background-color: #fff;
+}
+
+
+@media (max-width:680px) {
+    .home-container{
+        flex-direction: column;
+        padding: 2rem 2rem;
+    }
+
+    .movie-container{
+        flex-direction: column;
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
 }

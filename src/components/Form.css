@@ -1,0 +1,39 @@
+.form-container{
+    padding: 2rem;
+    position: relative;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+
+.form-container form h4{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.form-container form label{
+    font-size: 1.8rem;
+}
+
+.form-container form input{
+    padding: 1rem;
+}
+
+.form-container i{
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.form-container form input[type="submit"]{
+    background-color: skyblue;
+    border-radius: 1rem;
+    outline:0;
+    border:none;
+    margin-top:1rem;
+}
